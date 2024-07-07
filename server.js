@@ -19,7 +19,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Middleware to serve static files from the views directory
-app.use(express.static(path.join(__dirname, "Public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // GET /students route
 app.get("/students", async (req, res) => {
